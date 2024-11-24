@@ -14,12 +14,8 @@ a {
     text-decoration: none;
 }
 
-/* section global properties */
-
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h1 {
+    font-size: 3rem;
 }
 
 /* reusable properties */
@@ -32,108 +28,100 @@ section {
 
 header {
     background-color: lightblue;
-
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 #main-nav {
     background-color: orange;
-
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 70%;
-    margin: 0 auto;
-    padding: 1rem;
+    justify-content: space-evenly;
 }
 
-#main-nav ul li {
-    display: inline-block;
+#main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-/*main - hero section */
+/* hero section */
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
 
 #hero-section {
     background-color: darkblue;
-
-    padding: 3rem;
 }
 
-#hero-section .square {
+#hero-section .content {
     background-color: orchid;
+    text-align: center;
+    width: 50%;
     height: 400px;
-    flex-basis: 50%;
 }
 
-/* main - discord features section */
+/* main section */
 
-.main-section {
-    padding: 3rem;
-}
-
-.main-section .square {
+.main-section .content {
     background-color: deepskyblue;
-
+    text-align: center;
+    width: 40%;
     height: 500px;
-    flex-basis: 40%;
 }
 
-.main-section .square-b {
+.main-section .content-b {
     background-color: lightpink;
-
+    text-align: center;
+    width: 30%;
     height: 500px;
-    flex-basis: 30%;
 }
 
-/* main - cta bottom section */
+/* cta section */
 
-#cta-section {
-    padding: 3rem;
-}
-
-#cta-section .square {
+#cta-section .content {
     background-color: green;
-
+    text-align: center;
+    width: 70%;
     height: 1000px;
-    flex-basis: 70%;
 }
 
-/* footer */
+/* footer section */
 
 footer {
     background-color: #23272a;
     padding: 1rem 3rem;
 }
 
-/* footer - links section */
-
 #footer-links {
     width: 70%;
     margin: 0 auto;
-    padding-bottom: 3rem;
+    padding: 0;
+    padding-bottom: 2rem;
     border-bottom: 1px solid white;
 }
 
-#footer-links .square {
+#footer-links .content {
     background-color: salmon;
-    height: 550px;
+    text-align: center;
+    height: 600px;
     flex-grow: 2;
 }
 
-#footer-links .square-b {
-    background-color: mediumturquoise;
-    height: 550px;
+#footer-links .content-b {
+    background-color: turquoise;
+    text-align: center;
+    height: 600px;
     flex-grow: 1;
 }
-
-/* footer - login section */
 
 #footer-login {
     background-color: aquamarine;
     padding: 1rem;
-
     width: 70%;
-    margin: 1rem auto;
-
+    margin: 2rem auto;
     justify-content: space-between;
 }
